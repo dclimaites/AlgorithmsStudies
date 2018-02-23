@@ -44,13 +44,16 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchAlgorithms\BinarySearch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DataStructure\" />
+    <ProjectReference Include="..\AlgorithmsLib\AlgorithmsLib.csproj">
+      <Project>{26300f7e-f8fc-47ac-9dd1-cc12d909f492}</Project>
+      <Name>AlgorithmsLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
